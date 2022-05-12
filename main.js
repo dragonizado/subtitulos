@@ -5,22 +5,22 @@ let btnNoListen = document.querySelector('#no-escuchar');
 let btnClear = document.querySelector('#limpiar-texto');
 
 var rec = new SpeechRecognition();
-rec.lang = "es-AR";
+rec.lang = "es-CO";
 rec.continuous = true;
 rec.interim = true;
 rec.addEventListener("result", start)
 
 btnListen.onclick = function() {
-  btnListen.disabled =  true;
-  btnListen.classList.add('hidden')
-  btnClear.classList.remove('hidden')
+  // btnListen.disabled =  true;
+  // btnListen.classList.add('hidden')
+  // btnClear.classList.remove('hidden')
   rec.start()
 }
 
 btnNoListen.onclick = function() {
-  btnListen.disabled = false
-  btnListen.classList.remove('hidden')
-  btnClear.classList.add('hidden')
+  // btnListen.disabled = false
+  // btnListen.classList.remove('hidden')
+  // btnClear.classList.add('hidden')
   rec.stop()
 }
 
