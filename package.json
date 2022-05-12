@@ -1,0 +1,15 @@
+{
+  "name": "voz-texto",
+  "version": "1.0.0",
+  "description": "Subtitulos para la vida real, para personas con discapacidad auditiva",
+  "main": "index.js",
+  "author": "Dragonizado",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./style.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./style.css -m"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}
