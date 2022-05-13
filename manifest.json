@@ -4,14 +4,14 @@
     "start_url": "https://dragonizado.github.io/subtitulos/",
     "url": "https://dragonizado.github.io/subtitulos/",
     "display": "standalone",
-    "background_color": "#0dc500",
+    "background_color": "#ff0000",
     "description": "Aplicacion pensada para ayudar a las personas con problemas de audicion.",
     "dir": "ltr",
     "categories": "health,medical,utilities",
     "lang": "es",
     "orientation": "any",
     "scope": "/subtitulos/",
-    "theme_color": "#0dc500",
+    "theme_color": "#ff0000",
     "id": "/",
     "icons": [
         {
