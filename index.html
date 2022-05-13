@@ -15,8 +15,9 @@
     
     <div class="max-h-screen">
       <div class="sticky top-0 w-full h-[24px]">
-        <div id="mensajes" class="hidden">
-          <p class="text-center text-white bg-green-600">Escuchando...</p>
+        <div id="mensajes">
+          <p id="ok" class="hidden text-center text-white bg-green-600">Escuchando...</p>
+          <p id="error" class="hidden text-center text-white bg-red-600">Se ha presentado un error al escuchar...</p>
         </div>
       </div>
       <div id="visor" class="h-[calc(100vh-82px)] overflow-y-auto text-6xl leading-relaxed tracking-wide text-white"></div>

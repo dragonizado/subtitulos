@@ -4,6 +4,9 @@ let btnListen = document.querySelector('#escuchar')
 let btnNoListen = document.querySelector('#no-escuchar')
 let btnClear = document.querySelector('#limpiar-texto')
 let msgBox = document.querySelector('#mensajes')
+let okBox = msgBox.querySelector('#ok')
+let errorBox = msgBox.querySelector('#error')
+
 
 if ('serviceWorker' in navigator) {
   navigator
@@ -23,11 +26,18 @@ rec.interim = true;
 rec.addEventListener("result", start)
 
 rec.addEventListener('audiostart',function(){
-  msgBox.classList.remove('hidden')
+  okBox.classList.remove('hidden')
+  errorBox.classList.add('hidden')
 })
 
 rec.addEventListener('audioend',function(){
-  msgBox.classList.add('hidden')
+  okBox.classList.add('hidden')
+  errorBox.classList.add('hidden')
+})
+
+rec.addEventListener('error',function(){
+  okBox.classList.add('hidden')
+  errorBox.classList.remove('hidden')
 })
 
 btnListen.onclick = function() {
