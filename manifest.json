@@ -1,0 +1,14 @@
+{
+    "name": "Hablame",
+    "short_name": "Hablame",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0dc500",
+    "description": "Aplicaci\u00f3n pensada para ayudar a las personas con problemas de audici\u00f3n.",
+    "dir": "ltr",
+    "categories": "health,medical,utilities",
+    "lang": "es",
+    "orientation": "any",
+    "scope": "/",
+    "theme_color": "#0dc500"
+}
