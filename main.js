@@ -4,6 +4,17 @@ let btnListen = document.querySelector('#escuchar');
 let btnNoListen = document.querySelector('#no-escuchar');
 let btnClear = document.querySelector('#limpiar-texto');
 
+if ('serviceWorker' in navigator) {
+  navigator
+    .serviceWorker
+    .register(
+      './sw.js'
+    )
+    .then(function (reg) {
+      console.log('App instalada correctamente');
+    });
+}
+
 var rec = new SpeechRecognition();
 rec.lang = "es-CO";
 rec.continuous = true;
