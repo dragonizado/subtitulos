@@ -1,7 +1,8 @@
 {
     "name": "Hablame",
     "short_name": "Hablame",
-    "start_url": "/",
+    "start_url": "https://dragonizado.github.io/subtitulos/",
+    "url": "https://dragonizado.github.io/subtitulos/",
     "display": "standalone",
     "background_color": "#0dc500",
     "description": "Aplicacion pensada para ayudar a las personas con problemas de audicion.",
@@ -9,37 +10,37 @@
     "categories": "health,medical,utilities",
     "lang": "es",
     "orientation": "any",
-    "scope": "/",
+    "scope": "/subtitulos/",
     "theme_color": "#0dc500",
     "id": "/",
     "icons": [
         {
-            "src": "./images/icon_48x48.png",
+            "src": "images/icon_48x48.png",
             "sizes": "48x48",
             "type": "image/png"
         },
         {
-            "src": "./images/icon_72x72.png",
+            "src": "images/icon_72x72.png",
             "sizes": "72x72",
             "type": "image/png"
         },
         {
-            "src": "./images/icon_96x96.png",
+            "src": "images/icon_96x96.png",
             "sizes": "96x96",
             "type": "image/png"
         },
         {
-            "src": "./images/icon_144x144.png",
+            "src": "images/icon_144x144.png",
             "sizes": "144x144",
             "type": "image/png"
         },
         {
-            "src": "./images/icon_168x168.png",
+            "src": "images/icon_168x168.png",
             "sizes": "168x168",
             "type": "image/png"
         },
         {
-            "src": "./images/icon_192x192.png",
+            "src": "images/icon_192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         }
