@@ -1,8 +1,9 @@
 var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition
-let visor = document.querySelector('#visor');
-let btnListen = document.querySelector('#escuchar');
-let btnNoListen = document.querySelector('#no-escuchar');
-let btnClear = document.querySelector('#limpiar-texto');
+let visor = document.querySelector('#visor')
+let btnListen = document.querySelector('#escuchar')
+let btnNoListen = document.querySelector('#no-escuchar')
+let btnClear = document.querySelector('#limpiar-texto')
+let msgBox = document.querySelector('#mensajes')
 
 if ('serviceWorker' in navigator) {
   navigator
@@ -21,24 +22,25 @@ rec.continuous = true;
 rec.interim = true;
 rec.addEventListener("result", start)
 
+rec.addEventListener('audiostart',function(){
+  msgBox.classList.remove('hidden')
+})
+
+rec.addEventListener('audioend',function(){
+  msgBox.classList.add('hidden')
+})
+
 btnListen.onclick = function() {
-  // btnListen.disabled =  true;
-  // btnListen.classList.add('hidden')
-  // btnClear.classList.remove('hidden')
   rec.start()
 }
 
 btnNoListen.onclick = function() {
-  // btnListen.disabled = false
-  // btnListen.classList.remove('hidden')
-  // btnClear.classList.add('hidden')
   rec.stop()
 }
 
 btnClear.onclick = function() {
   visor.innerHTML = '';
 }
-
 
 
 function start(event){
