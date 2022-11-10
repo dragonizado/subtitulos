@@ -54,8 +54,12 @@ btnClear.onclick = function() {
 
 
 function start(event){
+  let finalText = ''
+
   for (let index = event.resultIndex; index < event.results.length; index++) {
-    visor.innerHTML += `<p>${event.results[index][0].transcript}</p>`;
+    finalText += `<p>${event.results[index][0].transcript}</p>`;
   }
+
+  visor.innerHTML = finalText
   visor.scrollTop = visor.scrollHeight;
 }
